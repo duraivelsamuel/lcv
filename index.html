@@ -115,11 +115,17 @@
     <!-- Hero Banner (hero_1.jpg placeholder) -->
     <section id="hero-banner" class="pt-[64px] md:pt-[72px] relative w-full h-[35vh] sm:h-[45vh] md:h-[65vh] overflow-hidden">
         <!-- Placeholder for hero_1.jpg -->
-        <img src="hero_1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/1920x800/004c99/ffffff?text=HERO+BANNER+LOYOLA+COLLEGE';" alt="Hero Banner: Loyola College Vettavalam Campus" class="absolute inset-0 w-full h-full object-cover opacity-70">
-        <div class="absolute inset-0 bg-corporate-blue/70 flex items-center justify-center text-center p-4">
-            <div class="text-white">
-                <h2 class="text-4xl md:text-6xl font-extrabold shadow-lg">Igniting Minds, Building Futures.</h2>
-                <p class="mt-2 text-lg md:text-2xl font-medium">Your journey to academic excellence starts here.</p>
+        <!-- Removed opacity-70 -->
+        <img src="hero_1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/1920x800/004c99/ffffff?text=HERO+BANNER+LOYOLA+COLLEGE';" alt="Hero Banner: Loyola College Vettavalam Campus" class="absolute inset-0 w-full h-full object-cover">
+        
+        <!-- Removed bg-corporate-blue/70 and text-center, added flex layout -->
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <!-- Added bg-white, padding, shadow, and rounded corners to the text container -->
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-2xl text-center">
+                <!-- Changed text color to blue -->
+                <h2 class="text-4xl md:text-6xl font-extrabold text-corporate-blue">Igniting Minds, Building Futures.</h2>
+                <!-- Changed text color to gray -->
+                <p class="mt-2 text-lg md:text-2xl font-medium text-gray-700">Your journey to academic excellence starts here.</p>
             </div>
         </div>
     </section>
@@ -134,8 +140,9 @@
             <section id="content-home" class="content-section bg-white p-6 md:p-10 rounded-xl shadow-lg transition-opacity duration-300">
                 
                 <!-- Admission Open Banner & Apply Button -->
-                <div class="text-center mb-10 bg-accent-red/10 p-6 rounded-xl border-l-8 border-accent-red shadow-md">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-accent-red mb-3 animate-pulse">
+                <!-- Changed banner colors from accent-red (yellow) to corporate-blue -->
+                <div class="text-center mb-10 bg-corporate-blue/10 p-6 rounded-xl border-l-8 border-corporate-blue shadow-md">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-blue mb-3 animate-pulse">
                         ADMISSION OPEN FOR 2025-26
                     </h2>
                     <p class="text-xl text-gray-700 mb-4">Secure your future with a diverse range of accredited programs.</p>
